@@ -1,0 +1,69 @@
+Name of sample	ENCODE Experiment.Accession	Lab	Biosample summary	Assembly	Assay title
+A673	ENCSR558SEE	Barbara Wold Caltech	Homo sapiens A673	GRCh38	total RNA-seq
+GM12878	ENCSR000AEC	Thomas Gingeras CSHL	Homo sapiens GM12878	GRCh38	total RNA-seq
+GM23248	ENCSR797BPP	Thomas Gingeras CSHL	Homo sapiens GM23248	GRCh38	total RNA-seq
+GM23338	ENCSR938LSP	Thomas Gingeras CSHL	Homo sapiens GM23338 originated from GM23248	GRCh38	total RNA-seq
+H1	ENCSR712GOC	Barbara Wold Caltech	Homo sapiens H1	GRCh38	total RNA-seq
+H9	ENCSR712BRU	Barbara Wold Caltech	Homo sapiens H9	GRCh38	total RNA-seq
+HCT116	ENCSR698RPL	Barbara Wold Caltech	Homo sapiens HCT116	GRCh38	total RNA-seq
+HepG2	ENCSR245ATJ	Barbara Wold Caltech	Homo sapiens HepG2	GRCh38	total RNA-seq
+IMR-90	ENCSR000CTK	Thomas Gingeras CSHL	Homo sapiens IMR-90	GRCh38	total RNA-seq
+K562	ENCSR000AEL	Thomas Gingeras CSHL	Homo sapiens K562	GRCh38	total RNA-seq
+Karpas-422	ENCSR314LXG	Thomas Gingeras CSHL	Homo sapiens Karpas-422	GRCh38	total RNA-seq
+MCF-7	ENCSR355JZC	Barbara Wold Caltech	Homo sapiens MCF-7	GRCh38	total RNA-seq
+OCI-LY7	ENCSR001HHK	Thomas Gingeras CSHL	Homo sapiens OCI-LY7	GRCh38	total RNA-seq
+PC-3	ENCSR420NLC	Thomas Gingeras CSHL	Homo sapiens PC-3	GRCh38	total RNA-seq
+PC-9	ENCSR743GKS	Barbara Wold Caltech	Homo sapiens PC-9	GRCh38	total RNA-seq
+Panc1	ENCSR128CYL	Barbara Wold Caltech	Homo sapiens Panc1	GRCh38	total RNA-seq
+Peyers-patch	ENCSR257NIR	Thomas Gingeras CSHL	Homo sapiens Peyer's patch tissue male adult (54 years)	GRCh38	total RNA-seq
+SJCRH30	ENCSR568YRP	Thomas Gingeras CSHL	Homo sapiens SJCRH30	GRCh38	total RNA-seq
+SJSA1	ENCSR880EGO	Thomas Gingeras CSHL	Homo sapiens SJSA1	GRCh38	total RNA-seq
+adrenal-gland	ENCSR276MMH	Thomas Gingeras CSHL	Homo sapiens adrenal gland tissue male adult (37 years)	GRCh38	total RNA-seq
+aorta	ENCSR185TQB	Barbara Wold Caltech	Homo sapiens aorta tissue female adult (41 years)	GRCh38	total RNA-seq
+breast-epithelium	ENCSR094VRQ	Thomas Gingeras CSHL	Homo sapiens breast epithelium tissue male adult (37 years)	GRCh38	total RNA-seq
+colonic-mucosa	ENCSR202OWR	Barbara Wold Caltech	Homo sapiens colonic mucosa tissue female adult (41 years)	GRCh38	total RNA-seq
+esophagus-muscularis-mucosa	ENCSR098BUF	Thomas Gingeras CSHL	Homo sapiens esophagus muscularis mucosa tissue female adult (53 years)	GRCh38	total RNA-seq
+esophagus-squamous-epithelium	ENCSR351OTL	Thomas Gingeras CSHL	Homo sapiens esophagus squamous epithelium tissue female adult (53 years)	GRCh38	total RNA-seq
+foreskin-keratinocyte	ENCSR034RPU	Michael Snyder Stanford	Homo sapiens foreskin keratinocyte male newborn (2-4 days)	GRCh38	total RNA-seq
+gastrocnemius-medialis	ENCSR609NZM	Thomas Gingeras CSHL	Homo sapiens gastrocnemius medialis tissue female adult (51 years)	GRCh38	total RNA-seq
+gastroesophageal-sphincter	ENCSR035SKV	Thomas Gingeras CSHL	Homo sapiens gastroesophageal sphincter tissue female adult (51 years)	GRCh38	total RNA-seq
+heart-left-ventricle	ENCSR391VGU	Thomas Gingeras CSHL	Homo sapiens heart left ventricle tissue female adult (53 years)	GRCh38	total RNA-seq
+heart-right-ventricle	ENCSR252UHW	Barbara Wold Caltech	Homo sapiens heart right ventricle tissue female adult (46 years)	GRCh38	total RNA-seq
+kidney	ENCSR892LBU	Barbara Wold Caltech	Homo sapiens kidney tissue female adult (47 years)	GRCh38	total RNA-seq
+liver	ENCSR000AEU	Thomas Gingeras CSHL	Homo sapiens liver tissue female child (6 years) and with nonobstructive coronary artery disease; liver tissue male adult (32 years)	GRCh38	total RNA-seq
+lung	ENCSR000AFC	Thomas Gingeras CSHL	Homo sapiens lung tissue female embryo (20 weeks) and female embryo (24 weeks)	GRCh38	total RNA-seq
+mammary-epithelial-cell	ENCSR000CUN	Thomas Gingeras CSHL	Homo sapiens mammary epithelial cell female adult (23 years)	GRCh38	total RNA-seq
+ovary	ENCSR042GYH	Thomas Gingeras CSHL	Homo sapiens ovary tissue female adult (51 years)	GRCh38	total RNA-seq
+pancreas	ENCSR071DYD	Barbara Wold Caltech	Homo sapiens pancreas tissue female child (16 years)	GRCh38	total RNA-seq
+placenta	ENCSR244HHV	Barbara Wold Caltech	Homo sapiens placenta tissue male embryo	GRCh38	total RNA-seq
+psoas-muscle	ENCSR574PFY	Barbara Wold Caltech	Homo sapiens psoas muscle tissue female adult (41 years)	GRCh38	total RNA-seq
+right-atrium-auricular-region	ENCSR457ENP	Thomas Gingeras CSHL	Homo sapiens right atrium auricular region tissue female adult (51 years)	GRCh38	total RNA-seq
+right-cardiac-atrium	ENCSR266PVZ	Barbara Wold Caltech	Homo sapiens right cardiac atrium tissue female adult (46 years)	GRCh38	total RNA-seq
+sigmoid-colon	ENCSR094GVZ	Thomas Gingeras CSHL	Homo sapiens sigmoid colon tissue female adult (53 years)	GRCh38	total RNA-seq
+skeletal-muscle-tissue	ENCSR000AFF	Thomas Gingeras CSHL	Homo sapiens skeletal muscle tissue tissue female embryo (19 weeks) and male embryo (22 weeks)	GRCh38	total RNA-seq
+spleen	ENCSR106SZN	Thomas Gingeras CSHL	Homo sapiens spleen tissue male adult (54 years)	GRCh38	total RNA-seq
+stomach	ENCSR000AFI	Thomas Gingeras CSHL	Homo sapiens stomach tissue female embryo (40 weeks) and male embryo (36 weeks)	GRCh38	total RNA-seq
+suprapubic-skin	ENCSR108MAU	Thomas Gingeras CSHL	Homo sapiens suprapubic skin tissue male adult (54 years)	GRCh38	total RNA-seq
+temporal-lobe	ENCSR000AFJ	Thomas Gingeras CSHL	Homo sapiens temporal lobe tissue female embryo (20 weeks) and female embryo (24 weeks)	GRCh38	total RNA-seq
+testis	ENCSR029KNZ	Thomas Gingeras CSHL	Homo sapiens testis tissue male adult (37 years)	GRCh38	total RNA-seq
+thyroid-gland	ENCSR000AFK	Thomas Gingeras CSHL	Homo sapiens thyroid gland tissue female embryo (37 weeks) and female embryo (40 weeks)	GRCh38	total RNA-seq
+tibial-nerve	ENCSR272UNO	Thomas Gingeras CSHL	Homo sapiens tibial nerve tissue female adult (51 years)	GRCh38	total RNA-seq
+transverse-colon	ENCSR403SZN	Thomas Gingeras CSHL	Homo sapiens transverse colon tissue female adult (51 years)	GRCh38	total RNA-seq
+urinary-bladder	ENCSR000AEV	Thomas Gingeras CSHL	Homo sapiens urinary bladder tissue female embryo (20 weeks) and female embryo (24 weeks)	GRCh38	total RNA-seq
+vagina	ENCSR146LBD	Thomas Gingeras CSHL	Homo sapiens vagina tissue female adult (53 years)	GRCh38	total RNA-seq
+A549	ENCSR000CON	Thomas Gingeras CSHL	Homo sapiens A549	GRCh38	polyA plus RNA-seq
+HeLa-s3	ENCSR000CPP	Thomas Gingeras CSHL	Homo sapiens HeLa-S3 cytosolic fraction	GRCh38	polyA plus RNA-seq
+SK-N-SH	ENCSR000CTR	Thomas Gingeras CSHL	Homo sapiens SK-N-SH cytosolic fraction	GRCh38	polyA plus RNA-seq
+Small-intestine	ENCSR150JIX	John Stamatoyannopoulos, UW	Homo sapiens small intestine tissue female embryo (108 days)	GRCh38	polyA plus RNA-seq
+peripheralbloodmononuclearcell	ENCSR313TJR	Joseph Costello, UCSF	Homo sapiens peripheral blood mononuclear cell female adult (28 years)	GRCh38	polyA plus RNA-seq
+endocrinepancreas	ENCSR271DJJ	Joseph Costello, UCSF	Homo sapiens endocrine pancreas tissue adult (59 years)	GRCh38	polyA plus RNA-seq
+largeintestine	ENCSR286KWP	John Stamatoyannopoulos, UW	Homo sapiens large intestine tissue male embryo (115 days)	GRCh38	polyA plus RNA-seq
+muscleleg	ENCSR086DZF	John Stamatoyannopoulos, UW	Homo sapiens muscle of leg tissue male embryo (96 days)	GRCh38	polyA plus RNA-seq
+thymus	ENCSR069CMT	John Stamatoyannopoulos, UW	Homo sapiens thymus tissue male embryo (127 days)	GRCh38	polyA plus RNA-seq
+placentalbasalplate	ENCSR104ZDH	Joseph Costello, UCSF	Homo sapiens placental basal plate tissue embryo (16 weeks)	GRCh38	polyA plus RNA-seq
+chorion	ENCSR249CKG	Joseph Costello, UCSF	Homo sapiens chorion tissue embryo (16 weeks)	GRCh38	polyA plus RNA-seq
+hues64	ENCSR348EFG	Bradley Bernstein, Broad	Homo sapiens HUES64	GRCh38	polyA plus RNA-seq
+foreskinmelanocyte	ENCSR634LOX	Joseph Costello, UCSF	Homo sapiens foreskin melanocyte male newborn	GRCh38	polyA plus RNA-seq
+amnion	ENCSR534UXT	Joseph Costello, UCSF	Homo sapiens amnion tissue female embryo (40 weeks)	GRCh38	polyA plus RNA-seq
+fibroblastbreast	ENCSR192NBO	Joseph Costello, UCSF	Homo sapiens fibroblast of breast female adult (17 years)	GRCh38	polyA plus RNA-seq
+neurosphere	ENCSR043KVA	Joseph Costello, UCSF	Homo sapiens neurosphere embryo (15 weeks) originated from ganglionic eminence	GRCh38	polyA plus RNA-seq
