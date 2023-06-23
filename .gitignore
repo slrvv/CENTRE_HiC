@@ -9,6 +9,6 @@ InsulationScores/
 *.ods
 *.out
 
-!RNAseq_ENCODE_metadata.tsv
-!Rna_seq_metadata.csv
-!subsetHiC_summary.tsv
+!DataAggregation/PairDistanceDistribution/subsetHiC_summary.tsv
+!Metadata/RNAseq_ENCODE_metadata.tsv
+!Metadata/Rna_seq_metadata.csv
