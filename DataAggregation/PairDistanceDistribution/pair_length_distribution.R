@@ -1,6 +1,6 @@
 ################################################################################
 #                                                                              
-# Pair length distribution: Calculate the length of all possible length using 
+# Pair length distribution: Calculate the pair size of all possible length using 
 # CENTRE::pairs()
 #
 ################################################################################
@@ -98,12 +98,4 @@ write.csv(distance_distribution,
           sep = "\t",
           row.names = F)
 #------------------------------------------------------------------------------#
-
-
-#------------------------Plot distances distribution---------------------------#
-
-#All chroms
-
-data <- read.csv("/project/CRUP_scores/CENTRE_HiC/distance_distribution.tsv",
-                 head = T)
 
