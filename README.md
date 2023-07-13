@@ -10,3 +10,7 @@ downloaded Hi-C and RNA-seq data
 
 - **DataAggregation**: Contains all helper scripts used for
 downloading the data, applying fan-c etc. 
+
+- **InsulationScoreScripts**: Contains all scripts used to decide
+on how to apply the Insulation Scores.
+

@@ -3,12 +3,16 @@ DataAggregation/PairDistanceDistribution/distance_distribution.tsv
 InsulationScores/
 *.png
 *.csv
+*.csv#
+*.tsv#
 *.tsv
 *.Rhistory
 *.RData
 *.ods
 *.out
 
-!DataAggregation/PairDistanceDistribution/subsetHiC_summary.tsv
+!Metadata/subsetHiC_summary.tsv
 !Metadata/RNAseq_ENCODE_metadata.tsv
 !Metadata/Rna_seq_metadata.csv
+!InsulationScoreScripts/Wilcoxtestpvalues.csv
+!DataAggregation/PairDistanceDistribution/BengiMeanETDistances.csv

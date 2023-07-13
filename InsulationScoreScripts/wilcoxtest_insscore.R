@@ -47,8 +47,6 @@ readBENGI <- function(path){
   BENGIdf <- read.table(path,
                              header = T,
                              sep = "\t")
-  print(head(BENGIdf))
-  
   BENGIdf <- BENGIdf[,c("gene_id1",
                         "symbol38",
                         "label",
@@ -137,7 +135,9 @@ computeMin <- function(BENGIdf, score_overlapping){
 #---------------------------Script start --------------------------------------#
 
 args = commandArgs(trailingOnly=TRUE)
-cat("Reading Data in")
+cat("Reading Data in\n")
+cat(paste0("Path to BENGI is ",args[1], "\n"))
+cat(paste0("Path to Insulation score is ", args[2], "\n"))
 GM12878BENGI <- readBENGI(args[1])
 insulationscores <- readInsulation(args[2])
 
@@ -150,7 +150,9 @@ overlaps <- findETScoreOverlaps(GM12878Ranges,
                                 GM12878BENGI,
                                 insulationscores)
 cat("Compute Insulation minimum")
+start_time <- Sys.time()
 overlapsmin <- computeMin(GM12878BENGI, overlaps)
+cat(paste0('time: ', format(Sys.time() - start_time), "\n"))
 
 
 cat("Wilcoxon test")
