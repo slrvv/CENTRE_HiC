@@ -1,1 +1,14 @@
 HiCmaps/
+DataAggregation/PairDistanceDistribution/distance_distribution.tsv
+InsulationScores/
+*.png
+*.csv
+*.tsv
+*.Rhistory
+*.RData
+*.ods
+*.out
+
+!RNAseq_ENCODE_metadata.tsv
+!Rna_seq_metadata.csv
+!subsetHiC_summary.tsv
