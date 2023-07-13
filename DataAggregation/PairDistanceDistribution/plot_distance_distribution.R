@@ -17,6 +17,6 @@ library(ggplot2)
 data <- read.csv("/project/CRUP_scores/CENTRE_HiC/distance_distribution.tsv",
 		head = T)
 png("/project/CRUP_scores/CENTRE_HiC/distances_all_chrom_dist.png")
-ggplot(data, aes(x=abs(distance)) + geom_histogram(binwidth=10)
+ggplot(data, aes(x=abs(distance))) + geom_histogram(binwidth=10)
 dev.off()
 #----------------------------------------------------------------------#

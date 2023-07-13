@@ -22,7 +22,8 @@ do
     do
 	echo $FILE
 	echo "Fanc insulation"
-	fanc insulation $DIRFILES/$SAMPLE$T/$FILE \
-	$DIRDI/$SAMPLE/$FILE.insulation -o bed
+	fanc insulation $DIRFILES/$SAMPLE$T/$FILE@10kb \
+	$DIRDI/$SAMPLE/$FILE@10kb.insulation -o bed
+	
     done
 done

@@ -12,7 +12,7 @@ library(stringr)
 HicMeta <- read.csv("/project/CRUP_scores/CENTRE_HiC/HiCmaps/all_HiC_encode_datasets.tsv",
                        sep = "\t", header = T) ## All of the HiC available in ENCODE
 
-RNAseqSet <- read.csv("/project/CRUP_scores/CENTRE_HiC/Rna_seq_metadata.csv",
+RNAseqSet <- read.csv("/project/CRUP_scores/CENTRE_HiC/Metadata/Rna_seq_metadata.csv",
                        sep = "\t", header = T)
 ##RNaseqSet is the metadata of the samples for which we have RNAseq and Histone
 ##ChIP seq
