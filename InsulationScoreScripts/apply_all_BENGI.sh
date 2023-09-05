@@ -42,3 +42,6 @@ WilcoxtestPancreas.GTEx " Pancreas.GTEx"
 
 Rscript wilcoxtest_insscore.R $BENGIPATH/Stomach.GTEx$BENGIEND $SCOREPATH/stomach/ENCFF883XXW$SCOREEND \
 WilcoxtestStomach.GTEx " Stomach.GTEx"
+
+Rscript wilcoxtest_insscore.R $BENGIPATH/GM12878.RNAPII-ChIAPET$BENGIEND $SCOREPATH/GM12878/ENCFF237QCN$SCOREEND \
+WilcoxtestGM12878.RNAPII-ChIAPET.png " GM12878.RNAPII-ChIAPET"

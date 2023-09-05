@@ -1,6 +1,8 @@
 HiCmaps/
 DataAggregation/PairDistanceDistribution/distance_distribution.tsv
 InsulationScores/
+DirectionalityIndex/
+Training/CENTRE_final_training/consensus_LCLs.txt
 *.png
 *.csv
 *.csv#
