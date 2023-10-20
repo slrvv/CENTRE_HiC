@@ -166,6 +166,9 @@ cat(paste0("Path to BENGI is ",args[1], "\n"))
 cat(paste0("Path to Directionality index is ", args[2], "\n"))
 cat(paste0("Name of file is", args[3], "\n"))
 
+resol <- args[4]
+windowsize <- args[5]
+
 cat("\n")
 
 cat("Reading in all data ...")
@@ -203,7 +206,7 @@ meandf <- computeMeanSwitchIntensity(overlaps_switches, switches, bengidf)
 
 cat("Made it to write table")
 rt <- "/project/CRUP_scores/CENTRE_HiC/WilcoxonTestResults/MeanSwitchIntensity/"
-namefile <- paste0(rt, "meanSwitchIntensity", args[3], ".csv") 
+namefile <- paste0(rt, "meanSwitchIntensity", args[3], resol, windowsize, ".csv") 
 write.table(meandf, 
             namefile, 
             row.names = F)

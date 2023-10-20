@@ -140,7 +140,8 @@ cat(paste0("Path to BENGI is ",args[1], "\n"))
 cat(paste0("Path to Insulation score is ", args[2], "\n"))
 GM12878BENGI <- readBENGI(args[1])
 insulationscores <- readInsulation(args[2])
-
+resol <- args[4]
+windowsize <- args[5]
 GM12878Ranges <- makeETRanges(GM12878BENGI)
 insulationRanges <- makeInsRanges(insulationscores)
 
@@ -154,36 +155,7 @@ start_time <- Sys.time()
 overlapsmin <- computeMin(GM12878BENGI, overlaps)
 cat(paste0('time: ', format(Sys.time() - start_time), "\n"))
 
-
-cat("Wilcoxon test")
 ## Wilcoxon test
-x <- overlapsmin[overlapsmin$label == 1, ]
-y <- overlapsmin[overlapsmin$label == 0, ]
-stat.test <- wilcox.test(x$score_min, y$score_min, alternative = "g")
-overlapsmin$label <- as.factor(overlapsmin$label)
-
-cat("Box Plot")
-df_p_val <- data.frame(
-  group1 = "0",
-  group2 = "1",
-  label = stat.test$p.value,
-  y.position = 3
-)
-png(paste0("/project/CRUP_scores/CENTRE_HiC/", args[3]))
-p <- ggplot(overlapsmin, aes(x = label, y = score_min)) +
-  geom_boxplot()
-
-p+add_pvalue(df_p_val,
-             xmin = "group1",
-             xmax = "group2",
-             label = "label",
-             y.position = "y.position") + 
-  labs(title=paste0("Wilcoxon test on BENGI", args[4]),
-       x ="Active ET pair", y = "Minimum insulation score")
-dev.off()
 write.csv(overlapsmin, paste0("/project/CRUP_scores/CENTRE_HiC/minInsulation",
-                              args[3], ".csv"),
-          row.names = F)
-write.csv(overlaps, paste0("/project/CRUP_scores/CENTRE_HiC/overlaps",
-                           args[3], ".csv"),
+                              args[3],resol,windowsize,".csv"),
           row.names = F)

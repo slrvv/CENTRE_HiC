@@ -13,8 +13,8 @@ INS=/project/CRUP_scores/CENTRE_HiC/InsulationScoreScripts/wilcoxtest_insscore.R
 DI=/project/CRUP_scores/CENTRE_HiC/DirectionalityIndexScripts/wilcoxtest_dirindex.R
 DII=/project/CRUP_scores/CENTRE_HiC/DirectionalityIndexScripts/dirindex_switchintensity.R
 
-FILEINS=/project/CRUP_scores/CENTRE_HiC/InsulationScores/ENCFF237QCN.hic@1kb.insulation_3kb.bed
-FILEDI=/project/CRUP_scores/CENTRE_HiC/DirectionalityIndex/ENCFF237QCN.hic@1kb.directionality_3kb.bed
+FILEINS=/project/CRUP_scores/CENTRE_HiC/InsulationScores/GM12878@1kb.insulation_3kb.bed
+FILEDI=/project/CRUP_scores/CENTRE_HiC/DirectionalityIndex/GM12878@1kb.directionality_3kb.bed
 
 echo "Minimum Insulation Score"
 Rscript $INS $DIRLCL $FILEINS consensusLcL " consensus LcL"

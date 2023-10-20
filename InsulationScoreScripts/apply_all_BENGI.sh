@@ -22,26 +22,38 @@ SCOREEND=".hic@10kb.insulation_30kb.bed"
 #HeLa --> only raw sequences available
 
 
-Rscript wilcoxtest_insscore.R $BENGIPATH/Colon.GTEx$BENGIEND $SCOREPATH/transverse-colon/ENCFF858ZGP$SCOREEND \
-WilcoxtestColon.GTEx " Colon.GTEx"
+#Rscript wilcoxtest_insscore.R $BENGIPATH/Colon.GTEx$BENGIEND $SCOREPATH/transverse-colon/ENCFF858ZGP$SCOREEND \
+#WilcoxtestColon.GTEx " Colon.GTEx"
 
-Rscript wilcoxtest_insscore.R $BENGIPATH/IMR90.HiC$BENGIEND $SCOREPATH/IMR-90/ENCFF636CEM$SCOREEND \
-WilcoxtestIMR90.HiC " IMR90.HiC"
+#Rscript wilcoxtest_insscore.R $BENGIPATH/IMR90.HiC$BENGIEND $SCOREPATH/IMR-90/ENCFF636CEM$SCOREEND \
+#WilcoxtestIMR90.HiC " IMR90.HiC"
 
-Rscript wilcoxtest_insscore.R $BENGIPATH/K562.CRISPR$BENGIEND $SCOREPATH/K562/ENCFF080DPJ$SCOREEND \
-WilcoxtestK562.CRISPR " K562.CRISPR"
+#Rscript wilcoxtest_insscore.R $BENGIPATH/K562.CRISPR$BENGIEND $SCOREPATH/K562/ENCFF080DPJ$SCOREEND \
+#WilcoxtestK562.CRISPR " K562.CRISPR"
 
-Rscript wilcoxtest_insscore.R $BENGIPATH/K562.HiC$BENGIEND $SCOREPATH/K562/ENCFF080DPJ$SCOREEND \
-WilcoxtestK562.HiC " K562.HiC"
+#Rscript wilcoxtest_insscore.R $BENGIPATH/K562.HiC$BENGIEND $SCOREPATH/K562/ENCFF080DPJ$SCOREEND \
+#WilcoxtestK562.HiC " K562.HiC"
 
-Rscript wilcoxtest_insscore.R $BENGIPATH/Ovary.GTEx$BENGIEND $SCOREPATH/ovary/ENCFF700CYI$SCOREEND \
-WilcoxtestOvary.GTEx " Ovary.GTEx"
+#Rscript wilcoxtest_insscore.R $BENGIPATH/Ovary.GTEx$BENGIEND $SCOREPATH/ovary/ENCFF700CYI$SCOREEND \
+#WilcoxtestOvary.GTEx " Ovary.GTEx"
 
-Rscript wilcoxtest_insscore.R $BENGIPATH/Pancreas.GTEx$BENGIEND $SCOREPATH/pancreas/ENCFF586MQY$SCOREEND \
-WilcoxtestPancreas.GTEx " Pancreas.GTEx"
+#Rscript wilcoxtest_insscore.R $BENGIPATH/Pancreas.GTEx$BENGIEND $SCOREPATH/pancreas/ENCFF586MQY$SCOREEND \
+#WilcoxtestPancreas.GTEx " Pancreas.GTEx"
 
-Rscript wilcoxtest_insscore.R $BENGIPATH/Stomach.GTEx$BENGIEND $SCOREPATH/stomach/ENCFF883XXW$SCOREEND \
-WilcoxtestStomach.GTEx " Stomach.GTEx"
+#Rscript wilcoxtest_insscore.R $BENGIPATH/Stomach.GTEx$BENGIEND $SCOREPATH/stomach/ENCFF883XXW$SCOREEND \
+#WilcoxtestStomach.GTEx " Stomach.GTEx"
 
 Rscript wilcoxtest_insscore.R $BENGIPATH/GM12878.RNAPII-ChIAPET$BENGIEND $SCOREPATH/GM12878/ENCFF237QCN$SCOREEND \
-WilcoxtestGM12878.RNAPII-ChIAPET.png " GM12878.RNAPII-ChIAPET"
+GM12878.RNAPII-ChIAPET  10kb
+
+Rscript wilcoxtest_insscore.R $BENGIPATH/GM12878.CHiC$BENGIEND $SCOREPATH/GM12878/ENCFF237QCN$SCOREEND \
+WilcoxtestGM12878.CHiC 10kb
+
+Rscript wilcoxtest_insscore.R $BENGIPATH/GM12878.GEUVADIS$BENGIEND $SCOREPATH/GM12878/ENCFF237QCN$SCOREEND \
+WilcoxtestGM12878.GEUVADIS 10kb
+
+Rscript wilcoxtest_insscore.R $BENGIPATH/GM12878.CTCF-ChIAPET$BENGIEND $SCOREPATH/GM12878/ENCFF237QCN$SCOREEND \
+WilcoxtestGM12878.CTCF-ChIAPET 10kb
+
+Rscript wilcoxtest_insscore.R $BENGIPATH/GM12878_HiC$BENGIEND $SCOREPATH/GM12878/ENCFF237QCN$SCOREEND \
+WilcoxtestGM12878.HiC 10kb
