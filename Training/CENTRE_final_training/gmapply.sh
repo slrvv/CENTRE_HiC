@@ -8,7 +8,7 @@ DIPATH="/project/CRUP_scores/CENTRE_HiC/DirectionalityIndex"
 SAVEPATH="/project/CRUP_scores/CENTRE_HiC/WilcoxonTestResults"
 for SAMPLE in "GM12878.HiC"
 do
-for WINDOW in "3kb" "5kb" "7kb" "10kb" "15kb"
+for WINDOW in "3kb" "5kb" "7kb"
 do
 FILE=$SAVEPATH/MinInsulationScore/minInsulationWilcoxtest$SAMPLE"1kb"$WINDOW.csv
 if [ -f "$FILE" ]; then

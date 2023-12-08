@@ -14,3 +14,8 @@ downloading the data, applying fan-c etc.
 - **InsulationScoreScripts**: Contains all scripts used to decide
 on how to apply the Insulation Scores.
 
+- **DirectionalityIndexScripts**: Contains all scripts used to decide
+on how to apply the Directionality Indices.
+
+- **Training**: Contains all produced classifiers and the training scripts
+

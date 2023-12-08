@@ -156,6 +156,6 @@ overlapsmin <- computeMin(GM12878BENGI, overlaps)
 cat(paste0('time: ', format(Sys.time() - start_time), "\n"))
 
 ## Wilcoxon test
-write.csv(overlapsmin, paste0("/project/CRUP_scores/CENTRE_HiC/minInsulation",
+write.csv(overlapsmin, paste0("/project/CRUP_scores/CENTRE_HiC/Features/MinInsulationScore/minInsulation",
                               args[3],resol,windowsize,".csv"),
           row.names = F)

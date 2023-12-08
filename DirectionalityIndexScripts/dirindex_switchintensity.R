@@ -205,7 +205,7 @@ cat("Computing mean Switch")
 meandf <- computeMeanSwitchIntensity(overlaps_switches, switches, bengidf)
 
 cat("Made it to write table")
-rt <- "/project/CRUP_scores/CENTRE_HiC/WilcoxonTestResults/MeanSwitchIntensity/"
+rt <- "/project/CRUP_scores/CENTRE_HiC/Features/MeanSwitchIntensity/"
 namefile <- paste0(rt, "meanSwitchIntensity", args[3], resol, windowsize, ".csv") 
 write.table(meandf, 
             namefile, 

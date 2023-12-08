@@ -40,7 +40,7 @@ SAVEROOT=/project/CRUP_scores/CENTRE_HiC/Training/BENGI_MSI_MI_datasets
 #   
 # done 
 
-for WINDOW in 15kb 25kb 35kb 50kb 75kb
+for WINDOW in 3kb 5kb 7kb
 do
   #IMR90
   # Rscript make_HiC_BENGI_Benchmarks.R $BENGIROOT/IMR90.HiC-Benchmark.v38.txt \
@@ -52,8 +52,12 @@ do
   # $MIROOT/minInsulationWilcoxtestK562.HiC5kb$WINDOW.csv $MSIROOT/meanSwitchIntensityWilcoxtestK562.HiC5kb$WINDOW.csv \
   # $SAVEROOT/K562.HiC-Benchmark.MI.MSI.v38.5kb$WINDOW.csv
   
-  Rscript make_HiC_BENGI_Benchmarks.R $BENGIROOT/K562.CRISPR-Benchmark.v38.txt \
-  $MIROOT/minInsulationWilcoxtestK562.CRISPR5kb$WINDOW.csv $MSIROOT/meanSwitchIntensityWilcoxtestK562.CRISPR5kb$WINDOW.csv \
-  $SAVEROOT/K562.CRISPR-Benchmark.MI.MSI.v38.5kb$WINDOW.csv
+  Rscript make_HiC_BENGI_Benchmarks.R $BENGIROOT/GM12878.RNAPII-ChIAPET-Benchmark.v38.txt \
+  $MIROOT/minInsulationWilcoxtestGM12878.RNAPII-ChIAPET1kb$WINDOW.csv $MSIROOT/meanSwitchIntensityWilcoxtestGM12878.RNAPII-ChIAPET1kb$WINDOW.csv \
+  $SAVEROOT/GM12878.RNAPII-ChIAPET-Benchmark.MI.MSI.v38.1kb$WINDOW.csv
+  
+  Rscript make_HiC_BENGI_Benchmarks.R $BENGIROOT/GM12878.HiC-Benchmark.v38.txt \
+  $MIROOT/minInsulationWilcoxtestGM12878.HiC1kb$WINDOW.csv $MSIROOT/meanSwitchIntensityWilcoxtestGM12878.HiC1kb$WINDOW.csv \
+  $SAVEROOT/GM12878.HiC-Benchmark.MI.MSI.v38.1kb$WINDOW.csv
 done
 
