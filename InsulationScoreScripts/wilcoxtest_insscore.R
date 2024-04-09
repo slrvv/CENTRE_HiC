@@ -14,7 +14,8 @@
 
 #------------------------Libraries and functions-------------------------------#
 
-library(CENTRE)
+devtools::load_all("/project/CRUP_scores/CENTRE")
+
 library(ggplot2)
 library(ggpubr)
 library(rstatix)
@@ -156,6 +157,5 @@ overlapsmin <- computeMin(GM12878BENGI, overlaps)
 cat(paste0('time: ', format(Sys.time() - start_time), "\n"))
 
 ## Wilcoxon test
-write.csv(overlapsmin, paste0("/project/CRUP_scores/CENTRE_HiC/Features/MinInsulationScore/minInsulation",
-                              args[3],resol,windowsize,".csv"),
+write.csv(overlapsmin, paste0(args[3],resol,windowsize,".csv"),
           row.names = F)

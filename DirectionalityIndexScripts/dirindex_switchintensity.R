@@ -12,7 +12,7 @@
 # The idea is the higher the switch the more likely a TAD boundary and the less
 # likely a Enhancer target link 
 
-library(CENTRE)
+devtools::load_all("/project/CRUP_scores/CENTRE")
 library(ggplot2)
 library(ggpubr)
 library(rstatix)
@@ -23,8 +23,8 @@ readDirectionality <- function(path){
   ##### A function to read in the directionality scores and make a dataframe #####
   directionality <- read.table(path, sep = "\t")
   directionality[!is.finite(directionality$V5),] <- NA ##remove infinite values 
-  directionality <- na.omit(directionality) #remove NA values
-  
+  directionality <- na.omit(directionality)
+  #remove NA values
   return(directionality)
 }
 
@@ -205,8 +205,7 @@ cat("Computing mean Switch")
 meandf <- computeMeanSwitchIntensity(overlaps_switches, switches, bengidf)
 
 cat("Made it to write table")
-rt <- "/project/CRUP_scores/CENTRE_HiC/Features/MeanSwitchIntensity/"
-namefile <- paste0(rt, "meanSwitchIntensity", args[3], resol, windowsize, ".csv") 
+namefile <- paste0(args[3], resol, windowsize, ".csv") 
 write.table(meandf, 
             namefile, 
             row.names = F)

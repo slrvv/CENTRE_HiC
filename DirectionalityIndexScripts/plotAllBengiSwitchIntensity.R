@@ -9,13 +9,13 @@
 
 library(ggplot2)
 library(ggpubr)
-root <- "/project/CRUP_scores/CENTRE_HiC/WilcoxonTestResults/MeanSwitchIntensity/"
+root <- "/project/CRUP_scores/CENTRE_HiC/Features/MeanSwitchIntensity/"
 setwd(root)
 
 
 paths <- c("meanSwitchIntensityWilcoxtestGM12878.RNAPII-ChIAPET.csv",
            "meanSwitchIntensityWilcoxtestGM12878.GEUVADIS.csv",
-           "meanSwitchIntensityWilcoxtestGM12878_HiC.csv",
+           "meanSwitchIntensityWilcoxtestGM12878.HiC.csv",
            "meanSwitchIntensityWilcoxtestGM12878.CTCF-ChIAPET.csv",
            "meanSwitchIntensityWilcoxtestColon.GTEx.csv",
            "meanSwitchIntensityWilcoxtestGM12878.CHiC.csv",
@@ -65,6 +65,8 @@ allBengi <- rbind(GM12878.RNAPII.ChIAPET,
 
 allBengi$label_s <- factor(allBengi$label==1, labels = c("non-interacting pairs", 
                                                 "interacting pairs"))
+allBengi[allBengi$namesample == "GM12878.CTCF.ChIAPET", 3] <- "GM12878.CTCF-\nChIAPET"
+allBengi[allBengi$namesample == "GM12878.RNAPII.ChIAPET", 3] <- "GM12878.\nRNAPII-ChIAPET"
 
 stat.test <- compare_means(mean_switch_intensity~label_s, allBengi, 
                            group.by = "namesample", method = "wilcox.test",
@@ -73,18 +75,22 @@ stat.test <- compare_means(mean_switch_intensity~label_s, allBengi,
 stat.test
 data_text <- data.frame(namesample = stat.test$namesample, 
                         mean_switch_intensity = rep(225, 12),
-                        lab = stat.test$p.format)
+                        lab = stat.test$p.signif)
 
 p <- ggplot(allBengi, aes(x = namesample, y = mean_switch_intensity)) +
   geom_boxplot(aes(color = label_s),outlier.shape = NA, na.rm = T) +
   scale_color_brewer(palette = "Dark2") +
   scale_y_continuous(limits = c(NA, 225)) +
-  theme(
-    legend.title = element_blank(),
-    axis.title.x = element_blank(), 
-    axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=0.5)
-  ) +
   labs(y= "mean of switch intensities over enhancer target window")
 p + geom_text(data = data_text,
               mapping = aes(x = namesample, y = mean_switch_intensity, label = lab),
-              size = 4)
+              size = 6) + theme(
+                legend.title = element_blank(),
+                legend.text = element_text(size = 12),
+                legend.key.height= unit(2, 'cm'),
+                legend.key.width= unit(2, 'cm'),
+                axis.title.x = element_blank(), 
+                axis.text.x = element_text(angle = 45, vjust = 0.5, hjust=0.5, size = 12),
+                axis.text.y = element_text(size = 12),
+                axis.title.y = element_text(size = 14)
+              ) 

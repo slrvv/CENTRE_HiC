@@ -10,6 +10,9 @@ library(ggcorrplot)
 file <- "/project/CRUP_scores/CENTRE_HiC/Training/CENTRE_final_training/F1_scores/f1_allBENGI_10KB.csv"
 f1dat <- read.table(file, header = T, sep = ",")
 
+f1dat[f1dat$SampleName == "GM12878.CTCF-ChIAPET", 2] <- "GM12878.CTCF-\nChIAPET"
+
+f1dat[f1dat$SampleName == "GM12878.RNAPII-ChIAPET",2] <- "GM12878.\nRNAPII-ChIAPET"
 ## T.test to compare CENTRE to CENTRE.MSI.MI
 ?compare_means
 stat.test <- compare_means(f1~Model, f1dat, 
@@ -18,20 +21,24 @@ stat.test <- compare_means(f1~Model, f1dat,
 stat.test
 data_text <- data.frame(SampleName = stat.test$SampleName, 
                         f1 = rep(0.75, 12),
-                        lab = stat.test$p.format)
+                        lab = stat.test$p.signif)
 
 p <- ggplot(f1dat, aes(x = SampleName, y = f1)) +
   geom_boxplot(aes(color = Model),) +
   scale_color_brewer(palette = "Dark2") +
-  theme(
-    legend.title = element_blank(),
-    axis.title.x = element_blank(), 
-    axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=0.5)
-  ) +
   labs(y= "F1 score")
 p + geom_text(data = data_text,
               mapping = aes(x = SampleName, y = f1, label = lab),
-              size = 4)
+              size = 4) +theme(
+                legend.title = element_blank(),
+                legend.text = element_text(size = 12),
+                legend.key.height= unit(2, 'cm'),
+                legend.key.width= unit(2, 'cm'),
+                axis.title.x = element_blank(), 
+                axis.text.x = element_text(angle = 45, vjust = 0.5, hjust=0.5, size = 12),
+                axis.text.y = element_text(size = 12),
+                axis.title.y = element_text(size = 14)
+              ) 
 
 ##Feature correlation heatmap for GM12878.RNAPII-ChIAPET
 file <- "/project/CRUP_scores/CENTRE_HiC/Training/BENGI_MSI_MI_datasets/10Kb/GM12878.RNAPII-ChIAPET-Benchmark.MI.MSI.v38.csv"

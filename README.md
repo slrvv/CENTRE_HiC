@@ -19,3 +19,5 @@ on how to apply the Directionality Indices.
 
 - **Training**: Contains all produced classifiers and the training scripts
 
+- **AcrossCTComparisonMSIMI**: Contains all scripts for the comparison 
+when mixing MSI and MI values from a cell type to predict in another cell type.
